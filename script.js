@@ -27,31 +27,6 @@ let tasks = {
     ]
 };
 
-function addTask() {
-    const inputText = document.getElementById('inputText').value.trim();
-    if (inputText) {
-        if (inputText.toLowerCase().includes('verità')) {
-            tasks.verità.push(inputText);
-        } else {
-            tasks.obbligo.push(inputText);
-        }
-        document.getElementById('inputText').value = '';
-        alert('Aggiunto con successo!');
-    } else {
-        alert('Inserisci un obbligo o una verità.');
-    }
-}
-
-function spinWheel() {
-    const wheel = document.getElementById('wheel');
-    wheel.classList.remove('stopped');
-    setTimeout(() => {
-        const isObbligo = Math.random() < 0.5;
-        wheel.classList.add('stopped');
-        showTask(isObbligo ? 'obbligo' : 'verità');
-    }, 2000); // Spin for 2 seconds
-}
-
 function showTask(type) {
     const taskList = tasks[type];
     const taskDisplay = document.getElementById('taskDisplay');
