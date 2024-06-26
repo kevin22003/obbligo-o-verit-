@@ -1,12 +1,12 @@
 let tasks = {
     obbligo: [
-        "Fai un massaggio ai piedi alla persona accanto a te",
-        "Fai 10 piegamenti",
-        "Scegli un obbligo (già uscito o che deve uscire)",
-        "Twerka",
         "Fingi un orgasmo",
-        "Scambiati la T-shirt con la persona alla tua sinistra",
+        "Fai 10 piegamenti",
         "Mangia un cucchiaino di cannella",
+        "Twerka",
+        "Fai un massaggio ai piedi alla persona accanto a te",
+        "Scambiati la T-shirt con la persona alla tua sinistra",
+        "Scegli un obbligo (già uscito o che deve uscire)",
         "Togliti il reggiseno",
         "Mostra il talento più sexy che hai",
         "L'altra persona dovrà rispondere a tutte le verità uscite e viceversa",
@@ -15,13 +15,13 @@ let tasks = {
     verità: [
         "Qual è la fantasia sessuale che più ti intriga?",
         "Quante volte al giorno ti masturbi?",
-        "Avresti mai un'avventura sessuale con la persona accanto a te, per sapere com'è?",
-        "Hai mai avuto fanstasie sessuali su qualcuno che è lì con te ora?",
+        "Hai mai fatto sexting con uno/a sconosciuto/a?",
+        "Hai mai avuto fanstasie sessuali su qualcuno in questa stanza? (entrambi i giocatori)",
         "Hai mai mandato foto di te nudo/a su WhatsApp?",
         "Hai mai fatto sexting con uno/a sconosciuto/a?",
         "Chi è la persona più sexy del gruppo",
         "Qual è la posizione che preferisci a letto?",
-        "Dì una cosa sincera e cattiva per ogni persona del gruppo",
+        "Dì una cosa sincera e cattiva per ogni persona del gruppo (entrambi i giocatori)",
         "Quali sono le tue misure?",
         "Descrivi/disegna le tue parti intime"
     ]
