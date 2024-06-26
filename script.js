@@ -27,15 +27,32 @@ let tasks = {
     ]
 };
 
+// Indici per tenere traccia dell'ultima task e verità mostrate
+let currentIndexObbligo = 0;
+let currentIndexVerita = 0;
+
 function showTask(type) {
-    const taskList = tasks[type];
     const taskDisplay = document.getElementById('taskDisplay');
-    if (taskList.length === 0) {
-        taskDisplay.innerText = 'Nessun ' + type + ' disponibile.';
+
+    if (type === 'obbligo') {
+        if (currentIndexObbligo >= tasks.obbligo.length) {
+            taskDisplay.innerText = 'Hai finito gli obblighi disponibili.';
+            return;
+        }
+        taskDisplay.innerText = tasks.obbligo[currentIndexObbligo];
+        currentIndexObbligo = (currentIndexObbligo + 1) % tasks.obbligo.length;
+    } else if (type === 'verità') {
+        if (currentIndexVerita >= tasks.verità.length) {
+            taskDisplay.innerText = 'Hai finito le verità disponibili.';
+            return;
+        }
+        taskDisplay.innerText = tasks.verità[currentIndexVerita];
+        currentIndexVerita = (currentIndexVerita + 1) % tasks.verità.length;
     } else {
-        const randomTask = taskList[Math.floor(Math.random() * taskList.length)];
-        taskDisplay.innerText = randomTask;
+        taskDisplay.innerText = 'Tipo non valido.';
+        return;
     }
+
     taskDisplay.style.display = 'block';
     taskDisplay.classList.remove('fadeIn');
     void taskDisplay.offsetWidth; // Trigger reflow
